@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BCS">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/cardbg5"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/bcs" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/delius_swash_caps"
+            android:gravity="center_vertical"
+            android:text="Bachelor of\nComputer\nScience"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0F000000">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTintMode="src_in"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mo_me"
+                    android:gravity="center"
+                    android:text="The B.C.S (Bachelors in Computer Science) Courses is an undergraduate program that provides the student an extensive learning opportunity on the subject of computer and its functioning. The duration of the B.C.S Courses are usually 3 years made up of 6 semesters. Some of the institutions provide a four year program under which the student is awarded the Honours degree on completion."
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/mo_me"
+                    android:gravity="center"
+                    android:text=" Bachelor of Computer Science or BCS is one of the undergraduate computer science degrees in India. It involves the study of fundaments of computer science like hardware, network, software and its related aspects. This 3 year Bachelor of Computer Science course qualifies you for a variety of job positions in various sectors of IT, computer science and technology. Most of the students prefer to work in this domain only after completing their degree because of high demand and salary package of IT professionals and software developers/ engineers. BCS course is perfect for students who want to make a career in computers and related subjects. Major Bachelor of Computer Science subjects include Electronic devices, Digital Electronics, Computer Programming Theory, Discrete Mathematics, Advanced Programming using Python, C++, Java, etc. The course curriculum is inclusive of theory and practicals which makes the students well trained and skillful in the field of programming, software, hardware and network."
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

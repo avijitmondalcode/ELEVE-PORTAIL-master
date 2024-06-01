@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/cardbg5"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/ee_dsc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/delius_swash_caps"
+            android:gravity="center_vertical"
+            android:text="Electrical\nEngineering"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0F000000">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTintMode="src_in"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mo_me"
+                    android:gravity="center"
+                    android:text="B.Tech Electrical Engineering is a 4 year undergraduate degree course. Electrical Engineering course is mostly about electricity and its fundamentals. It also covers various topics related to electronics and electromagnetism. It focuses on the industrial aspects of Electrical Engineering."
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/mo_me"
+                    android:gravity="center"
+                    android:text="B. Tech in Electrical Engineering is an undergraduate program of 4 years that deals with the study and application of electricity, electronics, electromagnetism for the development and maintenance of electrical and electronics equipment. They work in myriad industries such as hardware companies, large power plants, industrial machinery, electrical motors, computer chips. They also work in the manufacturing of ignition systems for automobiles, aircraft, space crafts and all kinds of engines. Electrical engineers rely on computer-aided design (CAD) systems to create layout circuits and schematics. Computers are also used to simulate how electrical devices and systems will function."
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

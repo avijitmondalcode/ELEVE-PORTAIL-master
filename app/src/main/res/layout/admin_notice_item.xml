@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="260dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_blog_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardBackgroundColor="#00000000"
+        app:cardCornerRadius="29dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#088B98"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvPdfName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/averia_gruesa_libre"
+                android:text="Notice Name"
+                android:textColor="#F8CD63"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+           <!-- <TextView
+                android:id="@+id/tvPdfLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="63dp"
+                android:fontFamily="@font/mo_me"
+                android:text="Link here"
+                android:textColor="#F88C8A8A"
+                android:textSize="17sp"
+                android:textStyle="bold"
+
+                />-->
+
+            <TextView
+                android:id="@+id/tvCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="49dp"
+                android:fontFamily="@font/mo_me"
+                android:text="Course"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDepartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="73dp"
+                android:fontFamily="@font/mo_me"
+                android:text="Department"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/mo_me"
+                android:text="Description"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btViewNotice"
+                android:layout_width="143dp"
+                android:layout_height="33dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="#fff"
+                android:fontFamily="@font/baloo"
+                android:shadowColor="@color/black"
+                android:text="View notice"
+                android:textColor="#FBC02D"
+
+                />
+
+            <ImageView
+                android:id="@+id/ivNoticeDelete"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_toRightOf="@id/btViewNotice"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_baseline_delete_24" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

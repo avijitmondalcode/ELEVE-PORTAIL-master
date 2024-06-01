@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Biology">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/cardbg5"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/biology_desc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/delius_swash_caps"
+            android:gravity="center_vertical"
+            android:text="BSc\nin\nBiology"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0F000000">
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTintMode="src_in"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mo_me"
+                    android:gravity="center"
+                    android:text="BSc Biology is a 3-year full-time undergraduate program that basically focuses on the organisms, biological systems and things driven from them.  The admission to the course is based on qualifying marks of 10+2."
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/mo_me"
+                    android:gravity="center"
+                    android:text="This Bachelor of Science is an undergraduate degree that imparts a foundation of information about botany, zoology, and ecology as well as molecular and cell biology and microbiology. Students attend classes and labs, gaining valuable knowledge regarding organisms. A BSc can serve as a terminal degree to enter research and laboratory careers or be used as a preparation for graduate work in the biological sciences. Courses such as organismal and cell biology, genetics, and chemistry, along with their associated laboratory work, make up the knowledge base that students will build on as they continue their degree and begin to focus their studies. Students will choose an area of specialization and tailor their final coursework toward this focus in areas such as field botany or microbiology, developing expertise that will give them an advantage in graduate school applications or fieldwork."
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

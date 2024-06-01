@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/cardbg5"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/it_desc" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/delius_swash_caps"
+            android:gravity="center_vertical"
+            android:text="Information\nTechnology"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0F000000"
+            android:backgroundTintMode="src_in"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/mo_me"
+                    android:gravity="center"
+                    android:text="B.Tech IT (Information Technology) is a 4-year Under Graduate (UG) engineering course where students are taught and trained in the concepts of software development. B.Tech IT is on par with the BCA course."
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/mo_me"
+                    android:gravity="center"
+                    android:text="B.Tech IT (Information Technology) is a 4-year Under Graduate (UG) engineering course where students are taught and trained in the concepts of software development. B.Tech IT is on par with the BCA course. However, the career prospects may vary for BCA and B.Tech IT. If you are looking for a bright career in the field of Software Engineering/ Development, this course is the best option. As IT is one of the dominant industries in India, the scope of career prospects are high with this degree. Students aspiring to study an IT course at B.Tech course must note that a good knowledge of Mathematics and Physics is required to excel."
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

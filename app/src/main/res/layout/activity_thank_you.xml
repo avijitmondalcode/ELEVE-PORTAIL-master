@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student.ThankYou"
+    android:background="@drawable/cardbg6"
+    >
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:background="@drawable/background_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <View
+        android:id="@+id/wave2"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@drawable/wave2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view4" />
+    <TextView
+        android:id="@+id/results_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/aclonica"
+        android:text="Exam Completed"
+        android:textColor="@color/color_white"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/results_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginRight="55dp"
+        android:indeterminate="false"
+        android:indeterminateDrawable="@drawable/circular_progress"
+        android:progress="100"
+        android:progressDrawable="@drawable/circular_progress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/results_title" />
+
+    <TextView
+        android:id="@+id/results_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/mo_re"
+        android:text="100%"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@+id/results_progress"
+        app:layout_constraintEnd_toEndOf="@+id/results_progress"
+        app:layout_constraintStart_toStartOf="@+id/results_progress"
+        app:layout_constraintTop_toTopOf="@+id/results_progress" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="110dp"
+        android:layout_height="123dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="84dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintRight_toLeftOf="@id/results_progress"
+        app:layout_constraintStart_toStartOf="@+id/results_progress"
+        app:layout_constraintTop_toBottomOf="@+id/results_title"
+        app:srcCompat="@drawable/ic_trophy"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/results_correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:text="Correct Answers"
+        android:textStyle="bold"
+        android:textColor="@color/colorDark"
+        android:textSize="20sp"
+        android:fontFamily="@font/delius_swash_caps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/results_progress"
+         />
+
+    <TextView
+        android:id="@+id/results_wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Wrong Answers"
+        android:textColor="@color/colorDark"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="@font/delius_swash_caps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/results_correct" />
+
+    <TextView
+        android:id="@+id/tvFullMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Full Marks"
+        android:textColor="@color/colorDark"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="@font/delius_swash_caps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/results_wrong" />
+
+
+    <TextView
+        android:id="@+id/results_fullMarks_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
+        android:text="NA"
+        android:textColor="@color/colorDark"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="@font/mo_li"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/results_wrong_text" />
+    <TextView
+        android:id="@+id/results_correct_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="NA"
+        android:textColor="@color/colorDark"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:fontFamily="@font/mo_li"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/results_correct" />
+
+    <TextView
+        android:id="@+id/results_wrong_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="NA"
+        android:textStyle="bold"
+        android:textColor="@color/colorDark"
+        android:textSize="20sp"
+        android:fontFamily="@font/mo_li"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/results_correct_text" />
+
+
+    <Button
+        android:id="@+id/btnResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/round_bg"
+        android:fontFamily="@font/mo_me"
+        android:text="Download Result"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

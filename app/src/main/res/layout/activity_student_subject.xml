@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Student.StudentSubject">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Exam\nList"
+        android:gravity="center"
+        android:fontFamily="@font/baloo"
+        android:textSize="40sp"
+        android:background="@drawable/button_background_blue"
+        android:textColor="#fff"
+
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Subject 1"
+            android:gravity="center"
+            android:fontFamily="@font/aclonica"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:background="@drawable/examsubject"
+            android:textColor="#0097A7"
+            android:id="@+id/tvSubject1"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Subject 2"
+            android:gravity="center"
+            android:fontFamily="@font/aclonica"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:background="@drawable/examsubject"
+            android:textColor="#0097A7"
+            android:id="@+id/tvSubject2"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Subject 3"
+            android:gravity="center"
+            android:fontFamily="@font/aclonica"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:background="@drawable/examsubject"
+            android:textColor="#0097A7"
+            android:id="@+id/tvSubject3"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Subject 4"
+            android:gravity="center"
+            android:fontFamily="@font/aclonica"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:background="@drawable/examsubject"
+            android:textColor="#0097A7"
+            android:id="@+id/tvSubject4"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Subject 5"
+            android:gravity="center"
+            android:fontFamily="@font/aclonica"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:background="@drawable/examsubject"
+            android:textColor="#0097A7"
+            android:id="@+id/tvSubject5"
+            />
+</LinearLayout>
+</ScrollView>

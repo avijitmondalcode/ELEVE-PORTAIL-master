@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentSignUp"
+
+    >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:background="@drawable/background_image_one_signup"
+    >
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+
+        >
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginTop="900dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="37dp">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            app:layout_constraintRight_toRightOf="@+id/registerYourself"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/registerYourself"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/averia_gruesa_libre"
+            android:text="Student\n SignUp"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/imgStudentProfile"
+
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/teacher"
+            tools:ignore="InvalidId" />
+
+        <EditText
+            android:id="@+id/etStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@android:color/white"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/etStudentEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@android:color/white"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+
+        <EditText
+            android:id="@+id/etStudentPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@android:color/white"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/etStudentPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@android:color/white"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:padding="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/etStudentDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@android:color/white"
+            android:hint="Date of Birth"
+            android:inputType="date"
+            android:padding="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+        <EditText
+            android:id="@+id/etStudentRegistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@android:color/white"
+            android:hint="Registration No"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+        <EditText
+            android:id="@+id/etStudentRollNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@android:color/white"
+            android:hint="Roll Number"
+            android:inputType="number"
+            android:padding="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            android:fontFamily="@font/averia_gruesa_libre"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                style="@style/modifiedEditText"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/averia_gruesa_libre"
+
+                android:text="Gender" />
+
+
+            <Spinner
+
+                android:id="@+id/studentgender"
+
+                style="@style/modifiedEditText"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:autofillHints="Gender"
+
+                android:fontFamily="@font/averia_gruesa_libre" />
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            android:fontFamily="@font/averia_gruesa_libre"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                style="@style/modifiedEditText"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/averia_gruesa_libre"
+
+                android:text="Course" />
+
+
+            <Spinner
+
+                android:id="@+id/studentCourse"
+
+                style="@style/modifiedEditText"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:autofillHints="Course"
+
+                android:fontFamily="@font/averia_gruesa_libre" />
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            android:fontFamily="@font/averia_gruesa_libre"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                style="@style/modifiedEditText"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/averia_gruesa_libre"
+
+                android:text="Department" />
+
+
+            <Spinner
+
+                android:id="@+id/studentDepartment"
+
+                style="@style/modifiedEditText"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:autofillHints="Course"
+
+                android:fontFamily="@font/averia_gruesa_libre" />
+
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            android:fontFamily="@font/averia_gruesa_libre"
+
+            android:orientation="horizontal">
+
+
+            <TextView
+
+                style="@style/modifiedEditText"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/averia_gruesa_libre"
+
+                android:text="Semester" />
+
+
+            <Spinner
+
+                android:id="@+id/studentSemester"
+
+                style="@style/modifiedEditText"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+
+                android:autofillHints="Semester"
+
+                android:fontFamily="@font/averia_gruesa_libre" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etStudentAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@android:color/white"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="0dp">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btnStudentSignUp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#4E525B"
+                android:elevation="0dp"
+                android:src="@drawable/round_arrow_forward_24"
+
+                android:tint="@android:color/white"
+                app:elevation="0dp"
+                app:fabCustomSize="80dp"
+                tools:ignore="RelativeOverlap" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

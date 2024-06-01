@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_student_home"
+            android:icon="@drawable/address"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_student_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="Profile Details" />
+
+
+        <item
+            android:id="@+id/nav_student_attendance"
+            android:icon="@drawable/attendance2"
+            android:title="Attendance"
+            />
+        <item
+            android:id="@+id/nav_student_exam"
+            android:icon="@drawable/exam"
+            android:title="Exam"
+            />
+        <item
+            android:id="@+id/nav_student_study_material"
+            android:icon="@drawable/subject2"
+            android:title="Study Material"
+            />
+        <item
+            android:id="@+id/nav_student_notice"
+            android:icon="@drawable/notice"
+            android:title="Notice"
+            />
+        <item
+            android:id="@+id/nav_student_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+
+
+
+    </group>
+</menu>

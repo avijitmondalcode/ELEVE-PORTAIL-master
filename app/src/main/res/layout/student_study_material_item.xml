@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:id="@+id/main_blog_post"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardbg8"
+            >
+
+            <TextView
+                android:id="@+id/tvStudentStudyMaterialName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Study Material Name"
+                android:textSize="20sp"
+                android:fontFamily="@font/mo_re"
+                android:textStyle="bold"
+                android:textColor="#303F9F"
+                />
+
+            <TextView
+                android:id="@+id/tvStudentStudyMaterialLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="23dp"
+                android:text="Link here"
+                android:textSize="15sp"
+                android:textColor="#303F9F"
+                />
+            <TextView
+                android:id="@+id/tvStudentStudyMaterialCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="23dp"
+                android:text="Course"
+                android:textSize="15sp"
+                android:textColor="#303F9F"
+                />
+            <TextView
+                android:id="@+id/tvStudentStudyMaterialDepartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="23dp"
+                android:text="Department"
+                android:textSize="15sp"
+                android:textColor="#303F9F"
+                />
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="View Material"
+                android:textColor="#303F9F"
+                android:background="#FFFFFE"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/btnViewStudentStudyMaterial"
+                />
+
+            <ImageView
+                android:id="@+id/ivDeleteStudentStudyMaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_delete_24"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

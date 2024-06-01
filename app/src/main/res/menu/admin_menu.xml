@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_admin_home"
+            android:icon="@drawable/address"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_admin_profile"
+            android:icon="@drawable/admin"
+            android:title="Profile Details" />
+
+        <item
+            android:id="@+id/nav_admin_student_details"
+            android:icon="@drawable/ic_team"
+            android:title="Student Details" />
+        <item
+            android:id="@+id/nav_admin_faculty_details"
+            android:icon="@drawable/teacher2"
+            android:title="Faculty Details" />
+        <item
+            android:id="@+id/nav_admin_subject"
+            android:icon="@drawable/subject2"
+            android:title="Subject" />
+        <item
+            android:id="@+id/nav_admin_notice"
+            android:icon="@drawable/notice"
+            android:title="Notice" />
+        <item
+            android:id="@+id/nav_admin_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout" />
+
+
+
+    </group>
+
+</menu>

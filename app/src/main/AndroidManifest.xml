@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.student.onlinestudentportal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".AboutElevePortail"></activity>
+        <activity android:name=".Courses" />
+        <activity android:name=".Maths" />
+        <activity android:name=".Biology" />
+        <activity android:name=".Chemistry" />
+        <activity android:name=".Physics" />
+        <activity android:name=".MCA" />
+        <activity android:name=".MBA" />
+        <activity android:name=".Mtech" />
+        <activity android:name=".BBAHM" />
+        <activity android:name=".BCS" />
+        <activity android:name=".BBA" />
+        <activity android:name=".BCA" />
+        <activity android:name=".EIE" />
+        <activity android:name=".EE" />
+        <activity android:name=".ECE" />
+        <activity android:name=".IT" />
+        <activity android:name=".CE" />
+        <activity android:name=".ME" />
+        <activity android:name=".CSE" />
+        <activity android:name=".Masters_Desc" />
+        <activity android:name=".ManagementDesc" />
+        <activity android:name=".BscDesc" />
+        <activity android:name=".BtechDesc" />
+        <activity android:name=".Masters" />
+        <activity android:name=".Management" />
+        <activity android:name=".Bsc" />
+        <activity android:name=".Btech" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Home" />
+        <activity android:name=".admin.AdminEditCourse" />
+        <activity android:name=".admin.AdminViewCourse" />
+        <activity android:name=".admin.AdminAddCourse" />
+        <activity android:name=".admin.AdminCourse" />
+        <activity android:name=".faculty.FacultyFinalAttendance" />
+        <activity android:name=".Student.StudentSubjectAttendance" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".faculty.FacultyProfileDetails" />
+        <activity android:name=".Student.StudentProfileDetails" />
+        <activity android:name=".Student.StudentViewAttendance" />
+        <activity android:name=".admin.AdminViewProfileDetails" />
+        <activity android:name=".admin.AdminProfileDetails" />
+        <activity android:name=".Student.StudentSignIn" />
+        <activity android:name=".faculty.FacultySignIn" />
+        <activity android:name=".admin.AdminAddProfileDetails" />
+        <activity android:name=".Student.StudentStartExam" />
+        <activity android:name=".Student.StudentQuestionSet" />
+        <activity android:name=".Student.StudentSubject" />
+        <activity android:name=".FacultyAddQuestionSetItem" />
+        <activity android:name=".FacultyAddQuestionSet" />
+        <activity android:name=".FacultyTakeExamItem" />
+        <activity android:name=".FacultyTakeExam" />
+        <activity android:name=".FacultyExam" />
+        <activity android:name=".FacultyAddQuestion" />
+        <activity android:name=".admin.AdminEditSubject" />
+        <activity android:name=".StudentSignUp2" />
+        <activity android:name=".FacultySignUp2" />
+        <activity android:name=".admin.AdminViewSubject" />
+        <activity android:name=".admin.AdminSubject" />
+        <activity android:name=".admin.AdminAddSubject" />
+        <activity android:name=".faculty.FacultyViewAttendance" />
+        <activity android:name=".faculty.FacultyCheckAttendance" />
+        <activity android:name=".test" />
+        <activity android:name=".faculty.FacultyTakeAttendance" />
+        <activity android:name=".faculty.FacultyAttendance" />
+        <activity android:name=".admin.ApproveStudent" />
+        <activity android:name=".Student.StudentStudyMaterial" />
+        <activity android:name=".admin.NotApproveStudent" />
+        <activity android:name=".StudentSignUp" />
+        <activity android:name=".admin.NotApproveFaculty" />
+        <activity android:name=".admin.ApproveFaculty" />
+        <activity android:name=".faculty.FacultySignUp" />
+        <activity android:name=".faculty.FacultyStudyMaterial" />
+        <activity android:name=".FacultyLogin" />
+        <activity android:name=".InAppPdfViewer" />
+        <activity android:name=".Student.StudentNotice" />
+        <activity android:name=".Result" />
+        <activity android:name=".Student.ThankYou" />
+        <activity android:name=".StudentAttendance" />
+        <activity android:name=".faculty.FacultyNotice" />
+        <activity android:name=".faculty.FacultyEditProfiles" />
+        <activity android:name=".faculty.FacultyViewProfileDetails" />
+        <activity android:name=".faculty.FacultyDashboard" />
+        <activity android:name=".FacultyDetails" />
+        <activity android:name=".FeesDetails" />
+        <activity android:name=".admin.StudentDetails" />
+        <activity android:name=".admin.AdminNotice" />
+        <activity android:name=".admin.AdminDashboard" />
+        <activity android:name=".Student.StudentDashboard" />
+        <activity android:name=".Student.StudentEditProfile" />
+        <activity android:name=".Student.StudentViewProfileDetails" />
+        <activity android:name=".UserProfileDetails" />
+        <activity android:name=".ProfileSetup" />
+        <activity android:name=".Register" />
+        <activity android:name=".Student.StudentExamScreen" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

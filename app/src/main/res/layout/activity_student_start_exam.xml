@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student.StudentStartExam"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:text="Welcome to,\n\n Eleve Portail Exam Zone"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:layout_margin="20dp"
+            android:background="@drawable/round_bk2"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:fontFamily="@font/delius_swash_caps"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Course"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:id="@+id/tvStudentExamCourse1"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/mo_li"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Department"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:id="@+id/tvStudentExamDepartment1"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/mo_li"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subject"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:id="@+id/tvStudentExamSubject1"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/mo_li"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exam Heading"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:id="@+id/tvStudentExamExamHeading1"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/mo_li"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Duration: 30 sec/question"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/mo_li"
+
+            />
+        <Button
+            android:id="@+id/btnStartExam"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Start Exam"
+            android:textColor="#fff"
+            android:layout_margin="100dp"
+            android:background="@drawable/round_bk6"
+
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

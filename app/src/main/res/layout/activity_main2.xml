@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="3"
+        >
+
+        <TextView
+            style="@style/loginHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aclonica"
+            android:shadowColor="#F44336"
+            android:text="Welcome "
+            android:textColor="#078BC6"
+            android:textSize="35sp"
+            android:layout_marginTop="10dp"
+            />
+
+        <ImageView
+            android:layout_width="231dp"
+            android:layout_height="418dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_illustration_welcome"
+            android:layout_gravity="center_horizontal"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <Button
+            android:id="@+id/btnAdmin"
+            style="@style/loginButton"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="Admin"
+            android:background="@drawable/button_background_blue"
+            />
+
+        <Button
+            android:id="@+id/btnFaculty"
+            style="@style/loginButton"
+            android:background="@drawable/button_background_blue"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="Faculty" />
+
+        <Button
+            android:id="@+id/btnStudent"
+            style="@style/loginButton"
+            android:background="@drawable/button_background_blue"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="Student"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

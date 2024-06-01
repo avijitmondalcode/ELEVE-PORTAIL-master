@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical"
+    android:background="@drawable/profile_bk"
+    android:layout_margin="10dp"
+    tools:context=".FacultyAddQuestion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:padding="20dp"
+        android:background="@drawable/round_bk2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Question Added"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/tvNoq"
+            android:textSize="30sp"/>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="40dp"
+        >
+        <ImageView
+            android:src="@drawable/cardbg5"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="8dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/etQuestion"
+                android:layout_width="match_parent"
+                android:layout_marginTop="13dp"
+                android:layout_height="53dp"
+                android:ems="10"
+                android:background="@drawable/studentcard"
+                android:textColorHint="#F6EDED"
+                android:paddingStart="12dp"
+                android:textColor="@color/white"
+                android:hint="Enter Question Name"
+
+                />
+
+            <EditText
+                android:id="@+id/etOpt1"
+                android:background="@drawable/studentcard"
+                android:textColorHint="#F6EDED"
+                android:textColor="@color/white"
+                android:paddingStart="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="option 1" />
+
+            <EditText
+                android:id="@+id/etOpt2"
+                android:layout_width="match_parent"
+                android:background="@drawable/studentcard"
+                android:textColor="@color/white"
+                android:textColorHint="#F6EDED"
+                android:paddingStart="12dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="option 2" />
+
+            <EditText
+                android:id="@+id/etOpt3"
+                android:background="@drawable/studentcard"
+                android:textColor="@color/white"
+                android:textColorHint="#F6EDED"
+                android:paddingStart="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="option 3" />
+
+            <EditText
+                android:id="@+id/etOpt4"
+                android:background="@drawable/studentcard"
+                android:textColorHint="#F6EDED"
+                android:textColor="@color/white"
+                android:paddingStart="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="option 4" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/spinnerAnswer"
+                android:autofillHints="answer"
+                android:background="@drawable/studentcard"
+                android:layout_marginTop="8dp"
+                />
+
+           <!-- <EditText
+                android:id="@+id/etAnswer"
+                android:background="@drawable/studentcard"
+                android:textColorHint="#F6EDED"
+                android:paddingStart="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:textColor="#ffffff"
+                android:inputType="number"
+                android:hint="Press 1 to 4" />-->
+
+            <Button
+                android:id="@+id/btnSubQues"
+                android:layout_width="200dp"
+                android:layout_height="53dp"
+                android:background="@drawable/login_button_bk2"
+                android:text="Next"
+
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/loginViewsMargin"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

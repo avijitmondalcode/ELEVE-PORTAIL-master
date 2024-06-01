@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_blog_post"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="#00000000"
+        app:cardCornerRadius="29dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardbg6"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvFacultyExamSubjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/averia_gruesa_libre"
+                android:text="Subject Name"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+            <!-- <TextView
+                 android:id="@+id/tvPdfLink"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="26dp"
+                 android:layout_marginTop="63dp"
+                 android:fontFamily="@font/mo_me"
+                 android:text="Link here"
+                 android:textColor="#F88C8A8A"
+                 android:textSize="17sp"
+                 android:textStyle="bold"
+
+                 />-->
+
+            <TextView
+                android:id="@+id/tvFacultyExamSubjectCourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/mo_me"
+                android:text="Course"
+                android:textColor="#F88C8A8A"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvFacultyExamSubjectName"
+                />
+
+            <TextView
+                android:id="@+id/tvFacultyExamSubjectDepartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/mo_me"
+                android:text="Department"
+                android:textColor="#F88C8A8A"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tvFacultyExamSubjectName"
+                android:layout_toRightOf="@+id/tvFacultyExamSubjectCourse"
+                />
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

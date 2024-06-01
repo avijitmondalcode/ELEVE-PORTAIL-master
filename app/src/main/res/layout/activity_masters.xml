@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    tools:context=".Masters"
+    android:orientation="vertical">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:background="@drawable/student_topheader">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:fontFamily="@font/averia_gruesa_libre"
+            android:padding="25dp"
+            android:text="Masters\nDepartments "
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!--    <ImageView-->
+        <!--        android:layout_width="200dp"-->
+        <!--        android:layout_height="220dp"-->
+        <!--        android:layout_alignParentEnd="true"-->
+        <!--        android:layout_alignParentRight="true"-->
+        <!--        android:layout_centerVertical="true"-->
+        <!--        android:layout_marginLeft="20dp"-->
+        <!--        android:layout_marginTop="20dp"-->
+        <!--        android:layout_marginEnd="2dp"-->
+        <!--        android:layout_marginRight="2dp"-->
+        <!--        android:src="@drawable/btech" />-->
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cardbg6"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMtech"
+                app:cardCornerRadius="30dp"
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:elevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/cardbg1" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:outlineProvider="background"
+                    android:elevation="100dp"
+                    android:outlineSpotShadowColor="@color/colorBlue"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mtech" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMBA"
+                app:cardCornerRadius="30dp"
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:elevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/cardbg1" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:outlineProvider="background"
+                    android:elevation="100dp"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:outlineAmbientShadowColor="@color/black"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mba" />
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMCA"
+                app:cardCornerRadius="30dp"
+                android:layout_width="350dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:elevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/cardbg1" />
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:outlineProvider="background"
+                    android:elevation="100dp"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:outlineAmbientShadowColor="@color/black"
+                    android:layout_gravity="center"
+                    android:src="@drawable/mca" />
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

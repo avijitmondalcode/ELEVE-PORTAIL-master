@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1052008767583",
+    "project_id": "online-student-portal-17ffb",
+    "storage_bucket": "online-student-portal-17ffb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1052008767583:android:bf89b7acf1f0357b15fbea",
+        "android_client_info": {
+          "package_name": "com.student.onlinestudentportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1052008767583-gruhlh3fjei9pjp47svjti8kasrvhu72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKKQuI94f3Su9QjD_pMvdhMSnhYyza4kE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1052008767583-gruhlh3fjei9pjp47svjti8kasrvhu72.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

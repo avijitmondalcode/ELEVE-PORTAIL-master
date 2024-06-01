@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_height="wrap_content"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/main_blog_post"
+        android:layout_width="match_parent"
+        android:layout_height="216dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="45dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/cardbg8"
+            >
+
+            <TextView
+                android:id="@+id/tvAttStudentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name"
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:textColor="#1B2355"
+                android:textStyle="bold"
+                android:focusable="true"
+                android:fontFamily="@font/averia_gruesa_libre"
+                />
+
+            <TextView
+                android:id="@+id/tvAttStudentRoll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAttStudentName"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="23dp"
+                android:textColor="#485455"
+                android:textStyle="bold"
+                android:text="University Roll No"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnAttStudentPresent"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAttStudentRoll"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Present"
+                android:fontFamily="@font/mo_re"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/btnAttStudentAbsent"
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="54dp"
+                android:layout_marginTop="84dp"
+                android:layout_toRightOf="@id/btnAttStudentPresent"
+                android:text="Absent"
+                android:fontFamily="@font/mo_re"
+                android:textStyle="bold"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

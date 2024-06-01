@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student.StudentViewAttendance">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tvStudentAttendanceHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="@drawable/round_bk2"
+            android:text="Header"
+            android:fontFamily="@font/averia_gruesa_libre"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tvStudentAttendancePresent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_margin="20dp"
+                android:text="Present"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#388E3C" />
+
+            <TextView
+                android:id="@+id/tvStudentAttendanceAbsent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="230dp"
+                android:text="Absent"
+                android:layout_marginTop="20dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:textColor="#D32F2F" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Present "
+                android:layout_gravity="center"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:textColor="#388E3C"
+                android:layout_margin="50dp"
+
+                />
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerStudentPresent"
+                android:layout_gravity="center_horizontal"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Absent"
+                android:textSize="20sp"
+                android:textColor="#D32F2F"
+                android:layout_margin="50dp"
+                android:layout_gravity="center"
+                android:textStyle="italic"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerStudentAbsent"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
